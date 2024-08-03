@@ -22,13 +22,17 @@ error: cannot find signatures with metadata for snap "vott-2.2.0-linux.snap"
 ```
 
 What do you mean "signature"?　　
+
+
 The cause of this error is because ["Since I'm installing a local snap, I have no assertions for it, and snap doesn't trust it"](https://askubuntu.com/questions/822765/snap-install-failure-error-cannot-find-signatures-with-metadata-for-snap).
 
-OK, not helpful error at all.　　 
+OK, not helpful error at all.
+
 Anyway, the solution is adding  `--dangerous`  flag. 
 
 ```
 snap install --dangerous  vott-2.2.0-linux.snap 
 ```
 
-it woked!　　
+it woked!
+
