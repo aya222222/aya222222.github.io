@@ -29,7 +29,10 @@ Host arbitrary-name
 But I got this error:
 
 ```
-But I got this eeror :Permissions 0644 for 'secret-key.pub' are too open.
+Permissions 0644 for 'secret-key.pub' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+
 ```
 
 To fix this, I run this command on terminal.
